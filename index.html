@@ -7,7 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dropbox</title>
     <!-- #region Font -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
     <!-- #endregion Font -->
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
@@ -37,23 +43,282 @@
 
     <!-- main -->
     <main>
-        <div class="container_fluid">
-            <div class="container">
-                <div class="description">
-                    <h1>Tutto ciò che ti serve per il lavoro, in un unico posto</h1>
-                    <section class="free_trial">
-                        <img src="./assets/img/jumbo.png" alt="" class="jumbo">
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur debitis voluptas
-                            tempore. Ex architecto molestiae totam minima. Necessitatibus ut, totam, ex tempore incidunt
-                            dolores provident itaque maxime nulla corrupti est quo officiis harum illum rem dicta nobis.
-                            Officia, maiores optio?</p>
-                        <button class="btn">Inizia la tua prova gratuita</button>
-                        <div>Annulla in qualsiasi momento</div>
-                        <i class="fa-solid fa-arrow-down"></i>
-                    </section>
+        <!-- description -->
+        <section class="description">
+            <div class="container-65">
+                <h1>Tutto ciò che ti serve per il lavoro, in un unico posto</h1>
+                <div class="free_trial padtop-2">
+                    <img src="./assets/img/jumbo.png" alt="" class="jumbo">
+                    <p>Finalmente tutti i tuoi strumenti, contenuti e collaboratori sono accessibili dallo stesso posto.
+                        Dropbox Business è più di uno spazio di archiviazione sicuro: è un modo intelligente e integrato
+                        per ottimizzare il flusso di lavoro esistente.</p>
+                    <button class="btn">Inizia la tua prova gratuita</button>
+                    <div>Annulla in qualsiasi momento</div>
+                    <i class="fa-solid fa-arrow-down"></i>
                 </div>
             </div>
-        </div>
+        </section>
+        <!-- /description -->
+
+        <section class="plan">
+            <div class="container-50">
+                <h2>Trova il piano business che fa per te</h2>
+
+                <!-- checkboxes -->
+                <div class="checkboxes">
+                    <input type="radio" name="check" value="mensile">
+                    <label for="mensile">Fatturazione mensile</label>
+                    <input type="radio" name="check" value="annuale">
+                    <label for="annuale">Fatturazione annuale</label>
+                </div>
+                <!-- /checkboxes -->
+
+                <!-- cards -->
+                <div class="row padtop-2 justcon-spbtw">
+                    <!-- card professional -->
+                    <div class="col-4">
+                        <div class="type">
+                            <i class="fa-solid fa-user"></i>
+                            <span>Singolo</span>
+                        </div>
+
+                        <div class="card">
+                            <!-- subscription -->
+                            <div class="subscription">
+                                <h3>Professional</h3>
+                                <span class="price">&euro; 12.00</span><br>
+                                <span class="time">/mese</span>
+                            </div>
+                            <!-- /subscription -->
+
+                            <!-- benefits -->
+                            <div class="benefits">
+                                <div class="row">
+                                    <i class="fa-solid fa-user"></i>
+                                    <span>1 utente</span><br>
+                                </div>
+                                
+                                <div class="row">
+                                    <i class="fa-solid fa-folder"></i>
+                                    <span>5 TB di spazio di archiviazione sicuro</span><br>
+                                </div>
+                                
+                                <div class="row">
+                                    <i class="fa-solid fa-circle-nodes"></i>
+                                    <span>Funzioni di produttività premium e condivisione file semplice e sicura</span>
+                                </div>
+                            </div>
+                            <!-- /benefits -->
+
+                            <!-- button 30days-free -->
+                            <button class="btn">Prova gratis per 30 giorni</button>
+                            <!-- /button 30days-free-->
+
+                            <!-- buy now -->
+                            <div class="padtop-2">
+                                <span class="borbot">oppure </span>
+                                <a href="#" class="buy_now">acquista ora</a>
+                            </div>
+                            <!-- /buy now -->
+
+                            <!-- highlights -->
+                            <div class="highlights padtop-2">
+                                <h6>Punti salienti del piano</h6>
+
+                                <div class="row">
+                                    <i class="fa-solid fa-check"></i>
+                                    <span>Invia file fino a 100 GB con Dropbox Transfert</span>
+                                </div>
+
+                                <div class="row">
+                                    <i class="fa-solid fa-check"></i>
+                                    <span>Cartelle offline su dispositivi mobili</span>
+                                </div>
+                            </div>
+                            <!-- /highlights -->
+                        </div>
+                    </div>
+                    <!-- /card professional -->
+
+                    <!-- card advanced -->
+                    <div class="col-4">
+                        <div class="type">
+                            <i class="fa-solid fa-users"></i>
+                            <span>Team</span>
+                        </div>
+
+                        <div class="card">
+                            <!-- subscription -->
+                            <div class="subscription">
+                                <h3>Advanced</h3>
+                                <span class="price">&euro; 18.00</span><br>
+                                <span class="time">/utente/mese</span>
+                            </div>
+                            <!-- /subscription -->
+
+                            <!-- benefits -->
+                            <div class="benefits">
+                                <div class="row">
+                                    <i class="fa-solid fa-user"></i>
+                                    <span>3 o più utenti</span><br>
+                                </div>
+                                
+                                <div class="row">
+                                    <i class="fa-solid fa-folder"></i>
+                                    <span>Tutto lo spazio di cui ha bisogno il tuo team</span><br>
+                                </div>
+                                
+                                <div class="row">
+                                    <i class="fa-solid fa-circle-nodes"></i>
+                                    <span>Sofisticate funzioni di controllo per tenere al sicuro tutti i file del tuo team</span>
+                                </div>
+                            </div>
+                            <!-- /benefits -->
+
+                            <!-- button 30days-free -->
+                            <button class="btn">Prova gratis per 30 giorni</button>
+                            <!-- /button 30days-free-->
+
+                            <!-- buy now -->
+                            <div class="padtop-2">
+                                <span class="borbot">oppure </span>
+                                <a href="#" class="buy_now">acquista ora</a>
+                            </div>
+                            <!-- /buy now -->
+
+                            <!-- highlights -->
+                            <div class="highlights padtop-2">
+                                <h6>Punti salienti del piano</h6>
+
+                                <div class="row">
+                                    <i class="fa-solid fa-check"></i>
+                                    <span>Nessun limite di spazio per i file</span>
+                                </div>
+
+                                <div class="row">
+                                    <i class="fa-solid fa-check"></i>
+                                    <span>Cartelle offline su dispositivi mobili</span>
+                                </div>
+
+                                <div class="row">
+                                    <i class="fa-solid fa-check"></i>
+                                    <span>Risparmio del 50&percnt; rispetto alle iscrizioni singole</span>
+                                </div>
+
+                                <div class="row">
+                                    <i class="fa-solid fa-check"></i>
+                                    <span>Possibilità di inserire nuovi membri del team</span>
+                                </div>
+
+                                <div class="row">
+                                    <i class="fa-solid fa-check"></i>
+                                    <span>Gestione dei permessi in base ai ruoli</span>
+                                </div>
+                            </div>
+                            <!-- /highlights -->
+                        </div>
+                    </div>
+                    <!-- /card advanced -->
+
+                    <!-- card enterprice -->
+                    <div class="col-4">
+                        <div class="type">
+                            <i class="fa-solid fa-hotel"></i>
+                            <span>Azienda</span>
+                        </div>
+
+                        <div class="card">
+                            <!-- subscription -->
+                            <div class="subscription">
+                                <h3>Enterprice</h3>
+                                <span class="price">Contattaci</span><br>
+                                <span class="time">-</span>
+                            </div>
+                            <!-- /subscription -->
+
+                            <!-- benefits -->
+                            <div class="benefits">
+                                <div class="row">
+                                    <i class="fa-solid fa-user"></i>
+                                    <span>10 o più utenti</span><br>
+                                </div>
+                                
+                                <div class="row">
+                                    <i class="fa-solid fa-folder"></i>
+                                    <span>Soluzioni personalizzabili per la tua azienda</span><br>
+                                </div>
+                                
+                                <div class="row">
+                                    <i class="fa-solid fa-circle-nodes"></i>
+                                    <span>Assistenza personalizzata per aiutare gli amministratori in una gestione su larga scala</span>
+                                </div>
+                            </div>
+                            <!-- /benefits -->
+
+                            <!-- button 30days-free -->
+                            <button class="btn">Contattaci</button>
+                            <!-- /button 30days-free-->
+
+                            <!-- buy now -->
+                            <div class="padtop-2">
+                                <span class="borbot">oppure </span>
+                                <a href="#" class="buy_now">acquista ora</a>
+                            </div>
+                            <!-- /buy now -->
+
+                            <!-- highlights -->
+                            <div class="highlights padtop-2">
+                                <h6>Punti salienti del piano</h6>
+
+                                <div class="row">
+                                    <i class="fa-solid fa-check"></i>
+                                    <span>Cartelle offline su dispositivi mobili</span>
+                                </div>
+
+                                <div class="row">
+                                    <i class="fa-solid fa-check"></i>
+                                    <span>Servizio assistenza 24/h</span>
+                                </div>
+
+                                <div class="row">
+                                    <i class="fa-solid fa-check"></i>
+                                    <span>Possibilità di personalizzazione totale</span>
+                                </div>
+                            </div>
+                            <!-- /highlights -->
+                        </div>
+                    </div>
+                    <!-- /card enterprice -->
+                </div>
+
+                <!-- last card -->
+                <div class="row martop-2">
+                    <div class="col-12">
+                        <div class="type">
+                            <i class="fa-solid fa-hotel"></i>
+                            <span>Azienda</span>
+                        </div>
+
+                        <div class="card relative">
+                            <!-- subscription -->
+                            <div class="subscription">
+                                <h3>Enterprice</h3>
+                                <span class="price">Contattaci</span><br>
+                            </div>
+                            <!-- /subscription -->
+
+                            <p class="padtop-2">Soluzioni personalizzate e supporto su misura per aiutare i professionisti IT nella gestione su qualsiasi scala</p>
+
+                            <button class="btn-abs">Contatta l'ufficio vendite</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- /last card -->
+                <!-- /cards -->
+
+
+            </div>
+        </section>
     </main>
     <!-- /main -->
 

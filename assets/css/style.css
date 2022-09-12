@@ -1,6 +1,7 @@
 :root{
-    --bg-btn-: #0161fe;
+    --dropbox-blue-: #0161fe;
     --bg-descripion-: #b5d0e6;
+    --card-border-: #dadada;
 }
 
 *{
@@ -9,15 +10,23 @@
     box-sizing: border-box;
 }
 
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+img{
+    max-width: 100%;
+}
+
 /* #region Utilities */
 
-.container{
-    width: 60%;
+.container-65{
+    width: 65%;
     margin: auto;
 }
 
-.container_fluid{
-    width: 100%;
+.container-50{
+    width: 50%;
     margin: auto;
 }
 
@@ -25,8 +34,41 @@
     display: flex;
 }
 
-img{
-    max-width: 100%;
+.col-4{
+    width: calc(100% / 12 * 3.5);
+}
+
+.col-12{
+    width: calc(100% / 12 * 12);
+}
+
+.clearfix::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.padtop-2{
+    padding-top: 2rem;
+}
+
+.martop-2{
+    margin-top: 2rem;
+}
+
+.borbot{
+    display: inline-block;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid var(--card-border-);
+}
+
+.justcon-spbtw{
+    justify-content: space-between;
+}
+
+.buy_now{
+    color: blue;
+    text-decoration: underline;
 }
 
 /* #endregion Utilities */
@@ -63,7 +105,7 @@ header a{
 }
 
 header .btn{
-    background-color: var(--bg-btn-);
+    background-color: var(--dropbox-blue-);
     color: white;
     padding: 0.3rem 1rem;
     border: 0;
@@ -77,16 +119,14 @@ main{
     padding-top: 4rem;
 }
 
-main .container_fluid{
-    background-color: var(--bg-descripion-);
-}
-
 .description{
+    background-color: var(--bg-descripion-);
     padding-top: 3rem;
 }
 
 .description h1{
-    font-size: 3rem;
+    font-size: 4rem;
+    font-weight: 800;
 }
 
 .description img{
@@ -94,23 +134,12 @@ main .container_fluid{
     float: right;
 }
 
-.free_trial{
-    padding-top: 2rem;
-}
-
-.free_trial p{
-    font-size: 0.8rem;
-}
-
-main .btn{
-    background-color: var(--bg-btn-);
+.description .btn{
+    background-color: var(--dropbox-blue-);
     color: white;
     padding: 0.5rem;
-    border: 0;
-}
-
-.free_trial .btn{
     margin: 1rem 0rem;
+    border: 0;
 }
 
 .free_trial i{
@@ -119,5 +148,109 @@ main .btn{
     font-size: 2rem;
 }
 
+.plan{
+    padding-top: 6rem;
+}
+
+.plan h2{
+    font-size: 2.5rem;
+    padding: 2rem 0rem;
+}
+
+.checkboxes{
+    display: flex;
+    align-items: center;
+}
+
+.checkboxes label{
+    padding-left: 0.2rem;
+}
+
+.checkboxes input:last-of-type{
+    margin-left: 2rem;
+}
+
+.type{
+    text-align: center;
+    padding: 0.5rem 0rem;
+    border: 1px solid var(--card-border-);
+    border-bottom: 0;
+}
+
+.card{
+    border: 1px solid var(--card-border-);
+    padding: 1rem;
+    font-size: 0.8rem;
+    /* height: 100%; */
+    position: relative;
+}
+
+.subscription h3{
+    font-size: 1.3rem;
+    padding: 0.5rem 0rem;
+}
+
+.price, .time{
+    line-height: 1.5rem;
+}
+
+.price{
+    font-weight: 700;
+}
+
+.time{
+    color: #928d90;
+}
+
+.benefits{
+    margin: 2rem 0rem;
+}
+
+.benefits .row,
+.highlights .row{
+    margin-top: 1rem;
+}
+
+.benefits i,
+.highlights i{
+    padding-right: 0.5rem;
+}
+
+.highlights h6{
+    font-size: 0.8rem;
+}
+
+.highlights i{
+    color: var(--dropbox-blue-);
+}
+
+.card .btn,
+.card .btn-abs{
+    background-color: var(--dropbox-blue-);
+    color: white;
+    border: 0;
+}
+
+.card .btn{
+    padding: 0.5rem;
+    width: 100%;
+}
+
+.card .btn-abs{
+    padding: 0.5rem 3rem;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
 /* #endregion Main */
 
+
+
+
+footer{
+    height: 500px;
+}
+
+
+/* Card da mettere alla stessa altezza... */
