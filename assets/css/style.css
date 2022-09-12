@@ -1,5 +1,6 @@
 :root{
-    --btn-background-: #0161fe;
+    --bg-btn-: #0161fe;
+    --bg-descripion-: #b5d0e6;
 }
 
 *{
@@ -11,7 +12,7 @@
 /* #region Utilities */
 
 .container{
-    width: 70%;
+    width: 60%;
     margin: auto;
 }
 
@@ -24,12 +25,17 @@
     display: flex;
 }
 
+img{
+    max-width: 100%;
+}
+
 /* #endregion Utilities */
 
 /* #region Header */
 
 header{
     width: 100%;
+    background-color: white;
     padding: 1rem;
     position: fixed;
     z-index: 1;
@@ -57,11 +63,61 @@ header a{
 }
 
 header .btn{
-    background-color: var(--btn-background-);
+    background-color: var(--bg-btn-);
     color: white;
     padding: 0.3rem 1rem;
     border: 0;
 }
 
 /* #endregion Header */
+
+/* #region Main */
+
+main{
+    padding-top: 4rem;
+}
+
+main .container_fluid{
+    background-color: var(--bg-descripion-);
+}
+
+.description{
+    padding-top: 3rem;
+}
+
+.description h1{
+    font-size: 3rem;
+}
+
+.description img{
+    height: 20rem;
+    float: right;
+}
+
+.free_trial{
+    padding-top: 2rem;
+}
+
+.free_trial p{
+    font-size: 0.8rem;
+}
+
+main .btn{
+    background-color: var(--bg-btn-);
+    color: white;
+    padding: 0.5rem;
+    border: 0;
+}
+
+.free_trial .btn{
+    margin: 1rem 0rem;
+}
+
+.free_trial i{
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+/* #endregion Main */
 
