@@ -406,6 +406,28 @@ main{
 
 }
 
+.faq{
+    padding: 7rem 0rem;
+}
+
+.faq .row{
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 0rem;
+    border-bottom: 1px solid black;
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+.faq h2{
+    padding-bottom: 3rem;
+    border-bottom: 1px solid black;
+}
+
+.faq i{
+    margin-right: 1rem;
+}
+
 /* #endregion Main */
 
 
