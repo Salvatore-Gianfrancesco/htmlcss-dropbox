@@ -262,6 +262,29 @@ main{
     padding: 0.5rem 1.5rem;
 }
 
+.partnership{
+    margin: 7rem 0rem;
+}
+
+.partnership img{
+    height: 25rem;
+}
+
+.partnership .row > div{
+    padding: 2rem;
+}
+
+.partnership p{
+    font-size: 0.8rem;
+    padding: 1rem 0rem;
+}
+
+.partnership .btn{
+    background-color: white;
+    padding: 0.5rem 1rem;
+    border: 1px solid black;
+}
+
 /* #endregion Main */
 
 
