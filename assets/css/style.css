@@ -20,6 +20,11 @@ img{
 
 /* #region Utilities */
 
+.container-fluid{
+    width: 100%;
+    margin: auto;
+}
+
 .container-65{
     width: 65%;
     margin: auto;
@@ -54,6 +59,10 @@ img{
 
 .padtop-2{
     padding-top: 2rem;
+}
+
+.padding-5{
+    padding: 5rem 0rem;
 }
 
 .martop-2{
@@ -171,7 +180,7 @@ main{
 }
 
 .plan h2{
-    font-size: 2.5rem;
+    font-size: 2rem;
     padding: 2rem 0rem;
 }
 
@@ -285,17 +294,31 @@ main{
     border: 1px solid black;
 }
 
+.operations .col-4{
+    margin: 1rem;
+}
+
+.operations h2{
+    font-size: 2rem;
+    padding: 2rem 0rem;
+}
+
+.operations p{
+    padding-top: 1.5rem;
+    font-size: 0.8rem;
+}
+
 /* #endregion Main */
-
-
 
 
 footer{
     height: 500px;
+    background-color: black;
 }
 
 
 /*
-Card da mettere alla stessa altezza
+TO DO...
+Card in plan da mettere alla stessa altezza
+Sistemare il css... è un casino
  */
-
