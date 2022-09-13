@@ -10,6 +10,7 @@
     --bg-lonelyplanet-: #0d2481;
     --bg-clearchannel-: #fed930;
     --bg-designit-middle-: #f4f5f4;
+    --bg-footer-: #010001;
 }
 
 *{
@@ -45,6 +46,10 @@ img{
 
 .row{
     display: flex;
+}
+
+.col-2{
+    width: calc(100% / 12 * 2.4);
 }
 
 .col-4{
@@ -430,6 +435,52 @@ main{
 
 /* #endregion Main */
 
+/* #region Footer */
+
+footer{
+    background-color: var(--bg-footer-);
+    color: white;
+}
+
+.links{
+    padding: 3rem 0rem;
+}
+
+.links h3{
+    margin-bottom: 1rem;
+}
+
+.links li{
+    list-style-type: none;
+}
+
+.links a{
+    color: white;
+    text-decoration: none;
+    line-height: 2rem;
+    font-size: 0.8rem;
+}
+
+.language{
+    padding: 2rem 0rem;
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.language .row{
+    align-items: flex-end;
+}
+
+.language span{
+    padding: 0rem 0.5rem;
+}
+
+.footer_line{
+    width: 10%;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+/* #endregion Footer */
 
 /*
 TO DO...
