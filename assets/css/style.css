@@ -1,7 +1,8 @@
 :root{
+    --bg-light-: #ffffff;
     --dropbox-blue-: #0161fe;
-    --bg-descripion-: #b5d0e6;
-    --card-border-: #dadada;
+    --bg-jumbotron-: #b5d0e6;
+    --card-border-: #c6c6c6;
     --bg-designit-: #a2d39b;
     --border-designit-: #d1e8cc;
     --bg-uniarizona-: #61092a;
@@ -25,6 +26,23 @@ body{
 
 img{
     max-width: 100%;
+}
+
+h1{
+    font-size: 4rem;
+    font-weight: 800;
+}
+
+h2{
+    font-size: 2rem;
+}
+
+h3{
+    font-size: 1.3rem;
+}
+
+h6{
+    font-size: 0.8rem;
 }
 
 /* #region Utilities */
@@ -56,8 +74,12 @@ img{
     width: calc(100% / 12 * 4);
 }
 
-.col-6{
-    width: calc(100% / 12 * 6);
+.col-5{
+    width: calc(100% / 12 * 5);
+}
+
+.col-7{
+    width: calc(100% / 12 * 7);
 }
 
 .col-8{
@@ -68,51 +90,9 @@ img{
     width: calc(100% / 12 * 12);
 }
 
-.clearfix::after{
-    content: "";
-    display: table;
-    clear: both;
-}
-
-.padtop-2{
-    padding-top: 2rem;
-}
-
-.padding-5{
-    padding: 5rem 0rem;
-}
-
-.martop-2{
-    margin-top: 2rem;
-}
-
-.marglr--1{
-    margin: 0rem -1rem;
-}
-
-.borbot{
-    display: inline-block;
-    padding-bottom: 1.5rem;
-    border-bottom: 1px solid var(--card-border-);
-}
-
-.justcon-spbtw{
-    justify-content: space-between;
-}
-
-.justcon-end{
-    display: flex;
-    justify-content: flex-end;
-}
-
 .fl-wrap{
     display: flex;
     flex-wrap: wrap;
-}
-
-.buy_now{
-    color: blue;
-    text-decoration: underline;
 }
 
 /* #endregion Utilities */
@@ -120,8 +100,10 @@ img{
 /* #region Header */
 
 header{
+    height: 8vh;
     width: 100%;
-    background-color: white;
+    background-color: var(--bg-light-);
+    font-size: 0.8rem;
     padding: 1rem;
     position: fixed;
     z-index: 1;
@@ -160,49 +142,54 @@ header .btn{
 /* #region Main */
 
 main{
-    padding-top: 4rem;
+    padding-top: 8vh;
+    font-size: 0.8rem;
 }
 
-.description{
-    background-color: var(--bg-descripion-);
-    padding-top: 3rem;
+/* jumbotron */
+
+.jumbotron{
+    background-color: var(--bg-jumbotron-);
 }
 
-.description h1{
-    font-size: 46px;
-    font-weight: 800;
+.jumbotron h1{
+    padding: 3rem 0rem;
 }
 
-.description img{
-    height: 20rem;
-    position: absolute;
-    bottom: -3rem;
-}
-
-.description .btn{
+.jumbotron .btn{
     background-color: var(--dropbox-blue-);
     color: white;
+    text-decoration: none;
     padding: 0.5rem;
-    margin: 1rem 0rem;
+    margin: 1.5rem 0rem;
     border: 0;
+    display: inline-block;
 }
 
-.free_trial i{
+.jumbotron i{
+    font-size: 2rem;
     margin-top: 2rem;
     margin-bottom: 1rem;
-    font-size: 2rem;
 }
 
-.free_trial .col-8{
+.jumbotron .col-8{
     position: relative;
 }
 
+.jumbotron img{
+    position: absolute;
+}
+
+/* /jumbotron */
+
+/* plan */
+
 .plan{
-    padding-top: 6rem;
+    font-size: 0.8rem;
+    margin: 7rem 0rem;
 }
 
 .plan h2{
-    font-size: 2rem;
     padding: 2rem 0rem;
 }
 
@@ -219,9 +206,14 @@ main{
     margin-left: 2rem;
 }
 
-.plan .col-4{
+.vertical_plan{
+    margin: 3.5rem -1rem;
+    justify-content: space-between;
+}
+
+.vertical_plan .col-4{
     margin: 1rem;
- }
+}
 
 .type{
     text-align: center;
@@ -231,14 +223,12 @@ main{
 }
 
 .card{
-    border: 1px solid var(--card-border-);
+    height: 100%;
     padding: 1rem;
-    font-size: 0.8rem;
-    /* height: 100%; */
+    border: 1px solid var(--card-border-);
 }
 
 .subscription h3{
-    font-size: 1.3rem;
     padding: 0.5rem 0rem;
 }
 
@@ -251,69 +241,108 @@ main{
 }
 
 .time{
-    color: #928d90;
+    color: var(--card-border-);
 }
 
 .benefits{
     margin: 2rem 0rem;
 }
 
+.highlights{
+    margin-top: 2rem;
+}
+
 .benefits .row,
 .highlights .row{
     margin-top: 1rem;
+    align-items: baseline;
 }
 
 .benefits i,
 .highlights i{
-    padding-right: 0.5rem;
-}
-
-.highlights h6{
-    font-size: 0.8rem;
+    padding-right: 0.3rem;
 }
 
 .highlights i{
     color: var(--dropbox-blue-);
 }
 
-.card .btn,
-.card .btn-last{
-    background-color: var(--dropbox-blue-);
-    color: white;
-    border: 0;
+.buy_now a{
+    color: blue;
+    text-decoration: underline;
+}
+
+.buy_now span{
+    display: inline-block;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid var(--card-border-);
 }
 
 .card .btn{
-    width: 100%;
-    padding: 0.5rem;
+    background-color: var(--dropbox-blue-);
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border: 0;
+    display: block;
 }
 
-.card .btn-last{
-    height: 30%;
+.vertical_plan .btn{
+    padding: 0.5rem;
+    margin: 2rem 0rem;
+}
+
+.horizontal_plan .btn{
+    height: 2.2rem;
     padding: 0.5rem 1.5rem;
 }
 
+.horizontal_plan .col-4{
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* /plan */
+
+/* partnership */
+
 .partnership{
     margin: 7rem 0rem;
+    padding-top: 2rem;
 }
 
 .partnership img{
     height: 25rem;
 }
 
-.partnership .row > div{
+.partnership .row div{
     padding: 2rem;
 }
 
 .partnership p{
-    font-size: 0.8rem;
     padding: 1rem 0rem;
 }
 
 .partnership .btn{
     background-color: white;
+    color: black;
+    text-decoration: none;
     padding: 0.5rem 1rem;
     border: 1px solid black;
+    display: inline-block;
+}
+
+/* /partnership */
+
+/* operations */
+
+.operations .row{
+    margin: 0rem -1rem;
+}
+
+.operations .row:last-of-type{
+    padding: 5rem 0rem;
+    margin: 0;
 }
 
 .operations .col-4{
@@ -321,14 +350,21 @@ main{
 }
 
 .operations h2{
-    font-size: 2rem;
     padding: 2rem 0rem;
 }
 
 .operations p{
     padding-top: 1.5rem;
-    font-size: 0.8rem;
 }
+
+.operations a{
+    color: blue;
+    text-decoration: underline;
+}
+
+/* /operations */
+
+/* logos */
 
 .logos{
     width: calc(100vw / 6);
@@ -364,7 +400,7 @@ main{
 }
 
 .hearst{
-    background-color: var(--bg-descripion-);
+    background-color: var(--bg-jumbotron-);
 }
 
 .lonelyplanet{
@@ -378,7 +414,6 @@ main{
 .designit_middle{
     background-color: var(--bg-designit-middle-);
     padding: 2rem;
-    font-size: 0.8rem;
 }
 
 .designit_middle img{
@@ -396,8 +431,13 @@ main{
 }
 
 .teams .col-12{
-    background-color: var(--bg-descripion-);
+    background-color: var(--bg-jumbotron-);
     padding: 7rem 0rem;
+}
+
+.teams .col-5{
+    display: flex;
+    justify-content: flex-end;
 }
 
 .teams h2{
@@ -405,33 +445,43 @@ main{
 }
 
 .teams .btn{
+    height: 2.2rem;
     background-color: white;
+    color: black;
+    text-decoration: none;
     padding: 0.5rem 2rem;
     border: 0;
-
+    display: inline-block;
 }
+
+/* /teams */
+
+/* faq */
 
 .faq{
     padding: 7rem 0rem;
 }
 
-.faq .row{
-    justify-content: space-between;
-    align-items: center;
-    padding: 2rem 0rem;
-    border-bottom: 1px solid black;
+.question{
     font-size: 0.8rem;
     font-weight: 700;
+    padding: 2rem 0rem;
+    border-bottom: 1px solid var(--card-border-);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .faq h2{
     padding-bottom: 3rem;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid var(--card-border-);
 }
 
 .faq i{
     margin-right: 1rem;
 }
+
+/* /faq */
 
 /* #endregion Main */
 
@@ -440,6 +490,7 @@ main{
 footer{
     background-color: var(--bg-footer-);
     color: white;
+    font-size: 0.8rem;
 }
 
 .links{
@@ -458,13 +509,11 @@ footer{
     color: white;
     text-decoration: none;
     line-height: 2rem;
-    font-size: 0.8rem;
 }
 
 .language{
     padding: 2rem 0rem;
-    font-size: 0.8rem;
-    color: rgba(255, 255, 255, 0.5);
+    color: var(--card-border-);
 }
 
 .language .row{
@@ -477,13 +526,9 @@ footer{
 
 .footer_line{
     width: 10%;
-    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-top: 1px solid var(--card-border-);
 }
 
 /* #endregion Footer */
 
-/*
-TO DO...
-Card in plan da mettere alla stessa altezza
-Sistemare il css... è un casino
- */
+
