@@ -1,6 +1,7 @@
 :root{
     --bg-light-: #ffffff;
     --dropbox-blue-: #0161fe;
+    --dropbox-blue-filter-: #0162fecd;
     --bg-jumbotron-: #b5d0e6;
     --card-border-: #c6c6c6;
     --bg-designit-: #a2d39b;
@@ -127,6 +128,14 @@ header .row{
 header a{
     padding: 0rem 1rem;
     color: black;
+    text-decoration: none;
+}
+
+header a:hover{
+    text-decoration: underline;
+}
+
+header .btn:hover{
     text-decoration: none;
 }
 
@@ -382,6 +391,7 @@ main{
 
 .logos img{
     width: 50%;
+    filter: invert(100%);
  }
 
 .designit{
@@ -538,6 +548,10 @@ footer{
     line-height: 2rem;
 }
 
+.links a:hover{
+    text-decoration: underline;
+}
+
 .language{
     padding: 2rem 0rem;
     color: var(--card-border-);
@@ -551,6 +565,10 @@ footer{
     padding: 0rem 0.5rem;
 }
 
+.language i:last-of-type{
+    cursor: pointer;
+}
+
 .footer_line{
     width: 10%;
     border-top: 1px solid var(--card-border-);
@@ -559,3 +577,11 @@ footer{
 /* #endregion Footer */
 
 
+.btn:hover{
+    background-color: var(--dropbox-blue-filter-)
+}
+
+.partnership .btn:hover,
+.teams .btn:hover{
+    background-color: white;
+}
