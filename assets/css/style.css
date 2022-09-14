@@ -167,9 +167,12 @@ main{
 }
 
 .jumbotron i{
+    color: black;
+    text-decoration: none;
     font-size: 2rem;
     margin-top: 2rem;
     margin-bottom: 1rem;
+    cursor: pointer;
 }
 
 .jumbotron .col-8{
@@ -370,7 +373,7 @@ main{
 /* logos */
 
 .logos{
-    width: calc(100vw / 6);
+    width: 50%;
     height: calc(100vw / 6);
     display: flex;
     align-items: center;
