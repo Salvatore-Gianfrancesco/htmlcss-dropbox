@@ -177,7 +177,10 @@ main{
 }
 
 .jumbotron img{
+    height: calc(100% + 3rem);
+    width: 100%;
     position: absolute;
+    bottom: -3rem;
 }
 
 /* /jumbotron */
@@ -462,14 +465,31 @@ main{
     padding: 7rem 0rem;
 }
 
-.question{
-    font-size: 0.8rem;
-    font-weight: 700;
+.faq_row{
     padding: 2rem 0rem;
     border-bottom: 1px solid var(--card-border-);
+}
+
+.question{
+    font-weight: 700;
+    cursor: pointer;
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.hidden{
+    visibility: collapse;
+    position: absolute;
+}
+
+.faq_row:hover .hidden{
+    visibility: visible;
+    position: static;
+}
+
+.hidden p{
+    padding-top: 1rem;
 }
 
 .faq h2{
@@ -479,6 +499,10 @@ main{
 
 .faq i{
     margin-right: 1rem;
+}
+
+.hidden{
+    display: block;
 }
 
 /* /faq */
